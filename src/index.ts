@@ -40,4 +40,17 @@ app.listen(PORT, () => {
 	// CÓDIGO PARA ATENDER OS REQUERIMENTOS
 	// R01, R02, R03, R04, R05
 	
+	const readline = requiere('readline');
+	const rl = readline.createInterface({
+	input:process.stdin,
+	output: process.stout
+	});
+	
+	rl.question(Who are you\n', (name: any) => {
+	console.log ('Hey there ' + Danilo);
+	rl.close();
+	});
+	
 });
+
+
